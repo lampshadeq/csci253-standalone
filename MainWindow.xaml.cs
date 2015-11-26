@@ -135,10 +135,15 @@ namespace Musique
       if (isOn)
       {
         // Open the text file
-        StreamReader sr = File.OpenText(Directory.GetCurrentDirectory() + "\\notif.txt");
+        String s = Directory.GetCurrentDirectory() + "\\notif.txt";
+        if (!File.Exists(s))
+        {
+          return;
+        }
+        StreamReader sr = File.OpenText(s);
 
         // Place data into array
-        String s = "";
+        s = "";
         int[] notif = new int[7];
         int i = 0;
         while ((s = sr.ReadLine()) != null)
