@@ -1,0 +1,16 @@
+﻿<Application
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:sys="clr-namespace:System;assembly=mscorlib"
+	x:Class="Musique.App"
+	StartupUri="MainWindow.xaml">
+	<Application.Resources>
+		<sys:String x:Key="Welcome">Welcome! Please start by turning on the device. This is performed by clicking on the button next to "Power".</sys:String>
+    <sys:String x:Key="Customize">Great! Now you can start customizing your options. Click on a menu item to see the different options.</sys:String>
+    <sys:String x:Key="Filter">You can decide which type of notification you want to be alerted about.</sys:String>
+    <sys:String x:Key="Sound">Feel free to change the ambient sound to be played when a notification is received. Only one sound can be on at a time.</sys:String>
+    <sys:String x:Key="Color">If you wish, you may change the colors of the off and on buttons. You cannot pick the same color for both options.</sys:String>
+    <sys:String x:Key="Notif">This is your visual representation for the notifications. The more notifications you have, the fuller the bar is, and the
+    louder the ambient sound becomes! Check your Facebook to clear the notifications.</sys:String>
+	</Application.Resources>
+</Application>

@@ -1,0 +1,55 @@
+﻿<Window x:Class="Musique.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Musique" Height="900" Width="1350" WindowStartupLocation="CenterScreen" Icon="m.ico" ResizeMode="NoResize">
+	<Window.Background>
+		<ImageBrush ImageSource="pack://siteoforigin:,,,/bg.png"/>
+	</Window.Background>
+    <Grid>
+    	<Grid.ColumnDefinitions>
+    		<ColumnDefinition/>
+    		<ColumnDefinition/>
+    	</Grid.ColumnDefinitions>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="*"></RowDefinition>
+        <RowDefinition Height="4*"></RowDefinition>
+      </Grid.RowDefinitions>
+    	<Grid HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,0,0,0">
+    		<Grid.RowDefinitions>
+    			<RowDefinition Height="2*"/>
+    			<RowDefinition/>
+    		</Grid.RowDefinitions>
+    		<Label Content="Musique&#xD;&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Lucida Calligraphy" FontSize="74.667"/>
+    		<Label Content="Ambient Notifications&#xD;&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="1" FontFamily="Lucida Calligraphy" FontSize="32"/>
+    	</Grid>
+    <TextBlock x:Name="helpMsg" HorizontalAlignment="Left" TextWrapping="Wrap" Text="{StaticResource Welcome}" VerticalAlignment="Center" Grid.Column="1" FontSize="28" FontFamily="Trebuchet MS" Margin="0,10,50,0" TextAlignment="Justify"/>
+    	<Border BorderBrush="Black" BorderThickness="2" HorizontalAlignment="Left" Height="630" VerticalAlignment="Top" Width="1280" Grid.Row="1" Grid.ColumnSpan="2" Margin="25,25,0,0">
+    		<Grid>
+    			<Grid.ColumnDefinitions>
+    				<ColumnDefinition/>
+    				<ColumnDefinition Width="3*"/>
+    			</Grid.ColumnDefinitions>
+    			<Grid HorizontalAlignment="Left" Height="616" VerticalAlignment="Top" Width="309" Margin="10,0,0,0">
+    				<Grid.ColumnDefinitions>
+    					<ColumnDefinition/>
+    				</Grid.ColumnDefinitions>
+    				<Grid.RowDefinitions>
+    					<RowDefinition/>
+    					<RowDefinition/>
+    					<RowDefinition/>
+    					<RowDefinition/>
+    					<RowDefinition/>
+    				</Grid.RowDefinitions>
+    				<Label x:Name="deviceLbl" Content="Device" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Trebuchet MS" FontSize="42.667" Cursor="Hand" Height="123.2" Width="309" VerticalContentAlignment="Center"/>
+    				<Label x:Name="filterLbl" Content="Filter" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="1" FontFamily="Trebuchet MS" FontSize="42.667" Height="123.2" Width="309" VerticalContentAlignment="Center" Cursor="Hand"/>
+    				<Label x:Name="soundLbl" Content="Sound" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="2" FontFamily="Trebuchet MS" FontSize="42.667" Height="123.2" Width="309" VerticalContentAlignment="Center" Cursor="Hand"/>
+    				<Label x:Name="colorLbl" Content="Color Scheme" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="3" FontFamily="Trebuchet MS" FontSize="42.667" Height="123.2" Width="309" VerticalContentAlignment="Center" Cursor="Hand"/>
+    				<Label x:Name="notifLbl" Content="Notification Bar" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="4" FontFamily="Trebuchet MS" FontSize="42.667" Height="123.2" VerticalContentAlignment="Center" Cursor="Hand"/>
+    			</Grid>
+    			<Border BorderBrush="Black" BorderThickness="2,0,0,0" HorizontalAlignment="Left" Height="626" VerticalAlignment="Top" Width="952" Grid.Column="1" Margin="5,0,0,0">
+    				<Grid x:Name="mainGrid"/>
+    			</Border>
+    		</Grid>
+    	</Border>
+    </Grid>
+</Window>
